@@ -6,7 +6,7 @@
 
 body {
   font-size: 10px;
-  background: url('../images/background_image.jpeg');
+  background: url('../images/background_image');
   background-size: 100%;
   font-family: 'Roboto';
 }
@@ -22,7 +22,7 @@ body {
 */
 
 .header-container {
-  display: inherit;
+  display: flex;
   background: rgba(0, 0, 0, 0.32);
   height: 3.5em;
   width: 100%;
@@ -51,27 +51,27 @@ body {
 }
 
 .icon-container,
-.icon-container-trello {
+.btn-md {
   padding: 1em;
   border-radius: 0.3em;
   height: 3em;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.24);
   justify-content: center;
   align-items: center;
 }
 
 .icon-container,
-.icon-container-trello,
-.rounded-avatar {
+.btn-md,
+.rounded-avatar-top {
   margin-left: 0.5em;
   cursor: pointer;
   display: inline-flex;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.24);
 }
 
 .icon-container:hover,
-.icon-container-trello:hover,
-.rounded-avatar:hover {
+.btn-md:hover,
+.rounded-avatar-top:hover {
   background: rgba(255, 255, 255, 0.2);
 }
 
@@ -80,12 +80,12 @@ body {
   justify-content: center;
 }
 
-.rounded-avatar {
+.rounded-avatar-top {
   width: 3em;
   border-radius: 50%;
 }
 
-.icon-container-trello {
+.btn-md {
   padding: 0 1em 0 1em;
 }
 
@@ -93,10 +93,14 @@ i {
   font-size: 1.5em;
 }
 
-#boards {
+#boards,
+.btn-text {
   font-size: 1.5em;
-  font-weight: bold;
   margin-left: 0.5em;
+}
+
+#boards {
+  font-weight: bold;
 }
 
 .input-box {
@@ -107,7 +111,7 @@ i {
   align-items: center;
   border-radius: 0.3em;
   border: 0;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.24);
 }
 
 .input-box:hover {
@@ -158,4 +162,102 @@ i {
 
 .trello-logo:hover {
   opacity: 1;
+}
+
+.board-header {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  background: rgba(0, 0, 0, 0.24);
+  color: white;
+  padding: 0.6em 0.8em;
+  height: auto;
+  width: 100%;
+  top: 3.5em;
+}
+
+.board-title {
+  font-size: 1.8em;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin: 0.5em 1.2em;
+}
+
+.icon-container.star {
+  color: #f2d600;
+  margin-left: 0;
+}
+
+.btn-divider {
+  float: left;
+  border-left: 1px solid hsla(0, 0%, 100%, 0.24);
+  height: 1.6em;
+  margin: 1em 0.8em 1.2em 0.8em;
+}
+
+.board-header-left-btns-wrapper,
+.board-header-right-btns-wrapper {
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+
+.personal-btn,
+.private-btn {
+  border: 0;
+  color: white;
+  font-size: 1.5em;
+}
+
+.personal-btn {
+  background: none;
+}
+
+.private-btn {
+  padding: 0 2em;
+  border-radius: 0.3em;
+  height: 3em;
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.rounded-avatar {
+  background: white;
+  border-radius: 50%;
+  display: inline-flex;
+  width: 3em;
+  height: 3em;
+  position: relative;
+}
+
+.btn-text.invite {
+  margin: 0;
+}
+
+.btn-md.invite {
+  margin-left: 1em;
+  padding: 0 1.2em;
+}
+
+.btn-md.private {
+  margin-left: 0;
+}
+
+.board-header-right-btns-wrapper {
+  position: absolute;
+  display: flex;
+  right: 1em;
+  width: 200px;
+  height: 50px;
+  justify-content: flex-end;
+}
+
+.btn-md.butler {
+  position: absolute;
+  right: 12.5em;
+}
+
+.btn-md.menu {
+  position: absolute;
+  right: 0;
 }
