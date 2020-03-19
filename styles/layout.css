@@ -36,17 +36,23 @@ body {
   position: inherit;
   color: white;
   display: inherit;
-  justify-content: space-around;
+  left: 0.5em;
+}
+
+.right-action-items {
+  top: 0.2em;
+  position: absolute;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
   width: 27%;
   height: 3em;
-  /* border: 1px solid #ccc; */
-  left: 1em;
+  right: 0.5em;
 }
 
 .icon-container,
 .icon-container-trello {
-  margin-left: 0.5em;
-  display: inline-flex;
+  padding: 1em;
   border-radius: 0.3em;
   height: 3em;
   background: rgba(255, 255, 255, 0.3);
@@ -54,9 +60,29 @@ body {
   align-items: center;
 }
 
+.icon-container,
+.icon-container-trello,
+.rounded-avatar {
+  margin-left: 0.5em;
+  cursor: pointer;
+  display: inline-flex;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.icon-container:hover,
+.icon-container-trello:hover,
+.rounded-avatar:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
 .icon-container {
   width: 3.5em;
   justify-content: center;
+}
+
+.rounded-avatar {
+  width: 3em;
+  border-radius: 50%;
 }
 
 .icon-container-trello {
@@ -68,21 +94,24 @@ i {
 }
 
 #boards {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: bold;
   margin-left: 0.5em;
 }
 
 .input-box {
+  position: relative;
   margin-left: 0.5em;
-  width: 22em;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   border-radius: 0.3em;
   border: 0;
-  height: 3em;
   background: rgba(255, 255, 255, 0.3);
+}
+
+.input-box:hover {
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .input {
@@ -95,6 +124,13 @@ i {
   width: 15em;
 }
 
+.app-search {
+  position: absolute;
+  right: 0.5em;
+  bottom: 25%;
+  font-size: 1.3em;
+}
+
 .logo-container {
   position: absolute;
   color: white;
@@ -105,12 +141,20 @@ i {
   left: 50%;
 }
 
-.trello-logo {
-  opacity: 0.5;
+.trello-logo,
+.trello-logo:hover {
   background: url('../images/trello-logo.png');
   background-size: 8em 3em;
   background-position: 100% 0;
   background-repeat: no-repeat;
   cursor: pointer;
   width: 8em;
+}
+
+.trello-logo {
+  opacity: 0.5;
+}
+
+.trello-logo:hover {
+  opacity: 1;
 }
