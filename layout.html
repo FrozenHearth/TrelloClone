@@ -4,8 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="styles/layout.css" />
+
     <title>Trello Layout</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <header class="header-container">
+        <div class="left-action-items">
+          <span class="icon-container">
+            <i class="fas fa-th app-switcher"></i>
+          </span>
+          <span class="icon-container">
+            <i class="fas fa-home"></i>
+          </span>
+          <span class="icon-container-trello">
+            <i class="fab fa-trello"></i>
+            <p id="boards">Boards</p>
+          </span>
+          <span class="input-box">
+            <input class="input" type="text" />
+            <span class="search-icon">
+              <i class="fas fa-search"></i>
+            </span>
+          </span>
+        </div>
+
+        <div class="logo-container">
+          <span class="trello-logo"></span>
+        </div>
+      </header>
+    </div>
+  </body>
 </html>

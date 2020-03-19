@@ -1,3 +1,116 @@
-/*
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 10px;
+  background: url('../images/background_image.jpeg');
+  background-size: 100%;
+  font-family: 'Roboto';
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* -----------------------
+   HEADER
+   ----------------------- 
 */
+
+.header-container {
+  display: inherit;
+  background: rgba(0, 0, 0, 0.32);
+  height: 3.5em;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.left-action-items {
+  top: 0.3em;
+  position: inherit;
+  color: white;
+  display: inherit;
+  justify-content: space-around;
+  width: 27%;
+  height: 3em;
+  /* border: 1px solid #ccc; */
+  left: 1em;
+}
+
+.icon-container,
+.icon-container-trello {
+  margin-left: 0.5em;
+  display: inline-flex;
+  border-radius: 0.3em;
+  height: 3em;
+  background: rgba(255, 255, 255, 0.3);
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container {
+  width: 3.5em;
+  justify-content: center;
+}
+
+.icon-container-trello {
+  padding: 0 1em 0 1em;
+}
+
+i {
+  font-size: 1.5em;
+}
+
+#boards {
+  font-size: 2em;
+  font-weight: bold;
+  margin-left: 0.5em;
+}
+
+.input-box {
+  margin-left: 0.5em;
+  width: 22em;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.3em;
+  border: 0;
+  height: 3em;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.input {
+  color: white;
+  border: 0;
+  outline: 0;
+  background: none;
+  box-shadow: none;
+  padding-right: 5.4em;
+  width: 15em;
+}
+
+.logo-container {
+  position: absolute;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+  height: 3em;
+  left: 50%;
+}
+
+.trello-logo {
+  opacity: 0.5;
+  background: url('../images/trello-logo.png');
+  background-size: 8em 3em;
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  width: 8em;
+}
