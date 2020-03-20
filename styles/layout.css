@@ -6,8 +6,10 @@
 
 body {
   font-size: 10px;
+  overflow-x: auto;
   background: url('../images/background_image');
-  background-size: 100%;
+  background-size: cover;
+  background-attachment: fixed;
   font-family: 'Roboto';
 }
 
@@ -264,19 +266,19 @@ i {
 
 .board-content {
   position: absolute;
-  width: 100%;
+  width: auto;
   height: 80vh;
   top: 8.5em;
   left: 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  flex-flow: row nowrap;
 }
 
 .list-content {
+  margin-left: 1em;
   background-color: #ebecf0;
   width: 27em;
-  /* max-height: 100%; */
-  /* height: 80%; */
   border-radius: 0.3em;
 }
 
