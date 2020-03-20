@@ -55,6 +55,16 @@ body {
   padding: 0 1em 0 1em;
 }
 
+.action-btn-text,
+.btn-text {
+  font-size: 1.5em;
+  margin-left: 0.5em;
+}
+
+.action-btn-text.bold {
+  font-weight: bold;
+}
+
 .icon-wrapper,
 .action-button {
   padding: 1em;
@@ -162,27 +172,26 @@ i {
   font-size: 1.5em;
 }
 
-#boards,
-.btn-text {
-  font-size: 1.5em;
-  margin-left: 0.5em;
-}
+/* -----------------------
+   END HEADER
+   ----------------------- 
+*/
 
-#boards {
-  font-weight: bold;
-}
+/* -----------------------
+   BOARD HEADER
+   ----------------------- 
+*/
 
 .board-header {
   display: flex;
   align-items: center;
   position: fixed;
+  top: 3.5em;
   left: 0;
   background: rgba(0, 0, 0, 0.24);
   color: white;
   padding: 0.6em 0.8em;
-  height: auto;
   width: 100%;
-  top: 3.5em;
 }
 
 .board-title {
@@ -197,13 +206,6 @@ i {
   margin-left: 0;
 }
 
-.btn-divider {
-  float: left;
-  border-left: 1px solid hsla(0, 0%, 100%, 0.24);
-  height: 1.6em;
-  margin: 1em 0.8em 1.2em 0.8em;
-}
-
 .board-header-left-btns-wrapper,
 .board-header-right-btns-wrapper {
   display: flex;
@@ -211,25 +213,26 @@ i {
   width: auto;
 }
 
-.personal-btn,
-.private-btn {
-  border: 0;
-  color: white;
+.btn-divider {
+  float: left;
+  border-left: 1px solid hsla(0, 0%, 100%, 0.24);
+  height: 1.6em;
+  margin: 1em 0.8em 1.2em 0.8em;
+}
+
+.action-button.personal {
+  background: none;
+  padding: 0;
   font-size: 1.5em;
 }
 
-.personal-btn {
-  background: none;
+.action-button.personal,
+.action-button.private {
+  border: 0;
+  color: white;
 }
 
-.private-btn {
-  padding: 0 2em;
-  border-radius: 0.3em;
-  height: 3em;
-  background: rgba(255, 255, 255, 0.24);
-}
-
-.rounded-avatar {
+.avatar {
   background: white;
   border-radius: 50%;
   display: inline-flex;
@@ -238,17 +241,13 @@ i {
   position: relative;
 }
 
-.btn-text.invite {
-  margin: 0;
-}
-
 .action-button.invite {
   margin-left: 1em;
   padding: 0 1.2em;
 }
 
-.action-button.private {
-  margin-left: 0;
+.btn-text.invite {
+  margin: 0;
 }
 
 .board-header-right-btns-wrapper {
@@ -260,21 +259,34 @@ i {
   justify-content: flex-end;
 }
 
-.action-button.butler {
+.action-button.butler,
+.action-button.menu {
   position: absolute;
+}
+
+.action-button.butler {
   right: 12.5em;
 }
 
 .action-button.menu {
-  position: absolute;
   right: 0;
 }
+
+/* -----------------------
+   END BOARD HEADER
+   ----------------------- 
+*/
+
+/* -----------------------
+   BOARD CONTENT
+   ----------------------- 
+*/
 
 .board-content {
   position: absolute;
   width: auto;
   height: 80vh;
-  top: 8.5em;
+  top: 9.2em;
   left: 0;
   display: flex;
   justify-content: space-around;
@@ -297,10 +309,10 @@ i {
 }
 
 .list-header-title {
+  position: absolute;
   color: #172b4d;
   font-size: 1.5em;
   font-weight: 500;
-  position: absolute;
   left: 1em;
   top: 0;
 }
@@ -312,10 +324,10 @@ i {
   font-size: 1.3em;
 }
 
-.list-cards {
+.list-cards-wrapper {
   width: 100%;
   max-height: 90%;
-  overflow-y: auto;
+  overflow-y: auto; /* Add vertical scrolling */
 }
 
 .list-card-details {
@@ -329,17 +341,17 @@ i {
   margin-bottom: 1.5em;
 }
 
-.list-card-member-title {
-  font-size: 1.5em;
-  display: block;
-  margin-bottom: 0.5em;
-}
-
 .list-card-details i {
   position: relative;
   opacity: 0.5;
   left: 0.5em;
   font-size: 1.2em;
+}
+
+.list-card-member-title {
+  font-size: 1.5em;
+  display: block;
+  margin-bottom: 0.5em;
 }
 
 .badge-text {
@@ -359,3 +371,8 @@ i {
 .list-card-details.cover {
   background-color: #ebecf0;
 }
+
+/* -----------------------
+   END BOARD CONTENT
+   ----------------------- 
+*/
