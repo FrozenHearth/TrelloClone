@@ -46,6 +46,101 @@ body {
   left: 0.5em;
 }
 
+.icon-wrapper {
+  width: 3.5em;
+  justify-content: center;
+}
+
+.action-button {
+  padding: 0 1em 0 1em;
+}
+
+.icon-wrapper,
+.action-button {
+  padding: 1em;
+  border-radius: 0.3em;
+  height: 3em;
+  background: rgba(255, 255, 255, 0.24);
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-wrapper,
+.action-button,
+.avatar-header {
+  margin-left: 0.5em;
+  cursor: pointer;
+  display: inline-flex;
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.icon-wrapper:hover,
+.action-button:hover,
+.avatar-header:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.input-wrapper {
+  position: relative;
+  margin-left: 0.5em;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.3em;
+  border: 0;
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.input-wrapper:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.search-input {
+  color: white;
+  border: 0;
+  outline: 0;
+  background: none;
+  box-shadow: none;
+  padding-right: 5.4em;
+  width: 15em;
+}
+
+.search-icon {
+  position: absolute;
+  right: 0.5em;
+  bottom: 25%;
+  font-size: 1.3em;
+}
+
+.logo-wrapper {
+  position: absolute;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+  height: 3em;
+  left: 50%;
+}
+
+.logo {
+  opacity: 0.5;
+}
+
+.logo:hover {
+  opacity: 1;
+}
+
+.logo,
+.logo:hover {
+  background: url('../images/trello-logo.png');
+  background-size: 8em 3em;
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  width: 8em;
+  margin-top: 0.3em;
+}
+
 .right-action-items {
   top: 0.2em;
   position: absolute;
@@ -57,46 +152,13 @@ body {
   right: 0.5em;
 }
 
-.icon-container,
-.btn-md {
-  padding: 1em;
-  border-radius: 0.3em;
-  height: 3em;
-  background: rgba(255, 255, 255, 0.24);
-  justify-content: center;
-  align-items: center;
-}
-
-.icon-container,
-.btn-md,
-.rounded-avatar-top {
-  margin-left: 0.5em;
-  cursor: pointer;
-  display: inline-flex;
-  background: rgba(255, 255, 255, 0.24);
-}
-
-.icon-container:hover,
-.btn-md:hover,
-.rounded-avatar-top:hover {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.icon-container {
-  width: 3.5em;
-  justify-content: center;
-}
-
-.rounded-avatar-top {
+.avatar-header {
   width: 3em;
   border-radius: 50%;
 }
 
-.btn-md {
-  padding: 0 1em 0 1em;
-}
-
 i {
+  /* Set the below font-size as default for icons */
   font-size: 1.5em;
 }
 
@@ -108,67 +170,6 @@ i {
 
 #boards {
   font-weight: bold;
-}
-
-.input-box {
-  position: relative;
-  margin-left: 0.5em;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0.3em;
-  border: 0;
-  background: rgba(255, 255, 255, 0.24);
-}
-
-.input-box:hover {
-  background: rgba(255, 255, 255, 0.5);
-}
-
-.input {
-  color: white;
-  border: 0;
-  outline: 0;
-  background: none;
-  box-shadow: none;
-  padding-right: 5.4em;
-  width: 15em;
-}
-
-.app-search {
-  position: absolute;
-  right: 0.5em;
-  bottom: 25%;
-  font-size: 1.3em;
-}
-
-.logo-container {
-  position: absolute;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  width: 20%;
-  height: 3em;
-  left: 50%;
-}
-
-.trello-logo,
-.trello-logo:hover {
-  background: url('../images/trello-logo.png');
-  background-size: 8em 3em;
-  background-position: 100% 0;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  width: 8em;
-  margin-top: 0.3em;
-}
-
-.trello-logo {
-  opacity: 0.5;
-}
-
-.trello-logo:hover {
-  opacity: 1;
 }
 
 .board-header {
@@ -191,7 +192,7 @@ i {
   margin: 0.5em 1.2em;
 }
 
-.icon-container.star {
+.icon-wrapper.star {
   color: #f2d600;
   margin-left: 0;
 }
@@ -241,12 +242,12 @@ i {
   margin: 0;
 }
 
-.btn-md.invite {
+.action-button.invite {
   margin-left: 1em;
   padding: 0 1.2em;
 }
 
-.btn-md.private {
+.action-button.private {
   margin-left: 0;
 }
 
@@ -259,12 +260,12 @@ i {
   justify-content: flex-end;
 }
 
-.btn-md.butler {
+.action-button.butler {
   position: absolute;
   right: 12.5em;
 }
 
-.btn-md.menu {
+.action-button.menu {
   position: absolute;
   right: 0;
 }
