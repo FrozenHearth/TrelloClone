@@ -1,3 +1,5 @@
 # TrelloClone
 
-Trello-like clone, with no functionality. Tried to keep it as close as possible to the Trello UI.
+A static Trello board clone. 
+
+Tried to keep UI as close to the original as possible.
