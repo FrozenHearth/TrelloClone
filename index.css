@@ -12,7 +12,7 @@ body {
 body {
   font-size: 10px;
   overflow-x: auto;
-  background: url('../images/background_image');
+  background: url('./images/background_image');
   background-size: cover;
   background-attachment: fixed;
   font-family: 'Roboto';
@@ -142,7 +142,7 @@ body {
 
 .logo,
 .logo:hover {
-  background: url('../images/trello-logo.png');
+  background: url('./images/trello-logo.png');
   background-size: 8em 3em;
   background-position: 100% 0;
   background-repeat: no-repeat;
